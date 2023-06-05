@@ -27,3 +27,7 @@ meals is an array containing the meal sizes for the maximal model. and the fishe
 meal_announcement is an array of structs that can be specified as zero if now meal announcement is wanted. Or given a struct with meal.size and meal.minutes containing information about the meal size and minutes until the meal will be consumed (as the commented out example). If the meal is announced 30 minutes before, it should be at index idx_meal-30/dt in meal_announcement. 
 
 simulate in [main.m](main.m) is a function handle of [src/simulation.m](src/simulation.m) that performs a simulation with a given patient and control policy over the number of simulation steps specified by the begin and end time and integration step. This function returns a result struct that contains the usefull variables for plotting
+
+
+### credits
+Credits to Jinyu Xie for a python implementation of the [simulator](https://github.com/jxx123/simglucose), with the necessary parameter files. It was a good start for this matlab simulator.  
